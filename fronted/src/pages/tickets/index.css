@@ -1,0 +1,37 @@
+.tickets-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tickets-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tickets-header h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .create-ticket-link {
+    text-decoration: none;
+    background-color: #2196f3;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .create-ticket-link:hover {
+    background-color: #1976d2;
+  }
+  
+  .tickets-list {
+    display: grid;
+    gap: 15px;
+  }
+  
