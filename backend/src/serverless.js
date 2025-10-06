@@ -1,3 +1,4 @@
+import serverless from "serverless-http";
 import app from "./app.js";
 import mongoose from "mongoose";
 
@@ -18,7 +19,10 @@ const connectDB = async () => {
   }
 };
 
-export default async function handler(req, res) {
+// Wrap Express app in serverless handler
+const handler = serverless(app);
+
+export default async function (req, res) {
   await connectDB();
-  app(req, res);
+  return handler(req, res);
 }
